@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
     infuraEndpoint: process.env.INFURA_ENDPOINT,
     privateKey: process.env.PRIVATE_KEY,

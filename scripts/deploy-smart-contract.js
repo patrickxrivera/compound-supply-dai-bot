@@ -1,9 +1,7 @@
-require('dotenv').config()
-
 const { bytecode } = require('../.build/CErc20SupplierBytecode.json');
 const abi = require('../.build/CErc20SupplierAbi.json');
 const Web3 = require('web3');
-const { infuraEndpoint, privateKey, zeroAddress, gasConfig } = require("../config");
+const { infuraEndpoint, privateKey, gasConfig } = require("../config");
 
 const web3 = new Web3(infuraEndpoint);
 
