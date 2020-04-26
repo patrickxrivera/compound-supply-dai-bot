@@ -1,0 +1,13 @@
+{
+  "name": "compound-supply-dai-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pxr13/compound-supply-dai-bot.git",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.34",
+    "dotenv": "^8.2.0",
+    "web3": "^1.2.7",
+    "web3-utils": "^1.2.7"
+  }
+}
