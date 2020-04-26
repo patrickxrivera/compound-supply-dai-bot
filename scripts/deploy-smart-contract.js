@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { bytecode } = require('../.build/bytecode.json');
+const { bytecode } = require('../.build/CErc20SupplierBytecode.json');
 const abi = require('../.build/CErc20SupplierAbi.json');
 const Web3 = require('web3');
 const { infuraEndpoint, privateKey, zeroAddress, gasConfig } = require("../config");
@@ -18,11 +18,12 @@ const web3 = new Web3(infuraEndpoint);
         data: `0x${bytecode}`,
     }).send({
         from: myWalletAddress,
-        to: zeroAddress,
         ...gasConfig   
     })
 
     console.log(result);
 
     console.log("Successfully deployed contract!")
+
+    console.log(`You can interface with the contract at address ${result.options.address}`);
 })();

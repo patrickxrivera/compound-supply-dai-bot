@@ -50,5 +50,5 @@ fs.mkdir('./.build/', { recursive: true }, (err) => {
   }
 });
 
-fs.writeFileSync('./.build/bytecode.json', JSON.stringify({ bytecode }));
+fs.writeFileSync(`./.build/${MyContractName}Bytecode.json`, JSON.stringify({ bytecode }));
 fs.writeFileSync(`./.build/${MyContractName}Abi.json`, JSON.stringify(abi));
